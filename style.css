@@ -1,0 +1,122 @@
+#logo {
+  display: block;
+  margin: 0 auto;       
+  height: auto;
+}
+
+body {
+  background-color: lightgray;
+  font-family: Copperplate, Papyrus, fantasy;
+} 
+
+h2{
+  text-align: center;
+}
+
+#blocchi_selettori{
+  text-align: center;
+}
+
+#blocchi_selettori label {
+  font-weight: bold;
+  margin-left: 8px;
+  font-size: 25px;
+}
+
+#blocchi_selettori select{
+  background-color: darkgrey;
+  font-family: Copperplate, Papyrus, fantasy;
+  font-size: 20px;
+}
+
+#bottone{
+  background-color: darkgrey;
+  font-family: Copperplate, Papyrus, fantasy;
+  display: block;        
+  margin: 35px auto;
+  text-align: center;
+  width: 300px;          
+  font-size: 45px;
+}
+
+#risultato{
+  text-align: center;
+  font-size: 30px;
+  min-height: 40px;      
+  margin-top: 100px;
+  font-weight: bold;
+  text-decoration-line: underline;
+}
+
+#domande_frequenti{
+  margin-top: 150px;      
+  margin-bottom: 100px;   
+  margin-left: 20px;    
+  text-align: left;
+  font-size: 25px;
+}
+
+#crash_bandicoot{
+  float: right;
+  transform: scaleX(-1);
+  max-width: 400px;     
+  height: auto;
+  margin-left: 60px;
+}
+
+.testi{
+  font-size: 25px;
+}
+
+.colonna_sinistra{
+  float: left;
+  width: 50%;
+}
+
+.colonna_destra{
+  float: right;
+  width: 50%;
+}
+
+#pip_boy{
+  max-width: 150px;     
+  height: auto;
+}
+
+#prerequisiti_cyberpunk{
+  max-width: 500px;     
+  height: auto;
+  margin-left: 50px;
+}
+
+#neo_cortex{
+  max-width: 200px;     
+  height: auto;
+}
+
+figcaption{
+  text-align: center;
+}
+
+#clickme{
+  text-align: left;
+  font-size: 40px;
+  margin-left: 70px;
+}
+
+#sflogo{
+  max-width: 400px;     
+  height: auto;
+  margin-left: 110px;
+  margin-top: 30px;
+}
+
+#pipBoyWatch{
+  margin-left: -120px;
+}
+
+#cpu2{
+  max-width: 400px;     
+  height: auto;
+  margin-left: 300px;
+}

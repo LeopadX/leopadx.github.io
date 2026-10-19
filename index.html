@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CanIRunIt?</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <img id = "logo" src = "CanIRunIt.png"></img>
+
+        <h2>Dopo aver selezionato CPU e GPU e videogioco, premi il tasto CanIRunIt? per vedere l'esito</h2>
+
+        <div id = "blocchi_selettori">
+            <label for="cpu">CPU?</label>
+            <select name="cpu" id="cpu">
+                <option value="1"> Intel Core i3-10100F </option>
+                <option value="2"> AMD Ryzen 5 3600 </option>
+                <option value="3"> Intel Core i5-13600K </option>
+                <option value="4"> AMD Ryzen 7 7800X3D </option>
+            </select>
+
+            <label for="gpu">GPU?</label>
+            <select name="gpu" id="gpu">
+                <option value="1"> NVIDIA GeForce GTX 1050 Ti </option>
+                <option value="2"> AMD Radeon RX 580 </option>
+                <option value="3"> NVIDIA GeForce RTX 3060 </option>
+                <option value="4"> NVIDIA GeForce RTX 4080 </option>
+            </select>
+
+            <label for="videogioco">Videogioco?</label>
+            <select name="videogioco" id="videogioco">
+                <option value="doom1"> DOOM (1993) </option>
+                <option value="csgo"> CS:GO </option>
+                <option value="fallout4"> Fallout 4 </option>
+                <option value="cyberpunk"> Cyberpunk 2077 </option>
+            </select>
+        </div>
+
+        <button id = "bottone" type="button" onclick="verificaGioco()">CanIRunIt?</button> 
+
+        <img id = "crash_bandicoot" src = "  https://freepngimg.com/thumb/crash_bandicoot/21153-6-crash-bandicoot-photos.png"></img>
+
+        <p id="risultato"></p>
+
+        <div id = "domande_frequenti">
+            <h3 style="color:red">Domande frequenti:</h3>
+            <ul>
+                <li><a href="pagine/affidabilita.html">Ma quanto sono affidabili i risultati?</a></li>
+                <li><a href="pagine/fonti.html">Che fonti hai utilizzato per la realizzazione del sito?</a></li>
+                <li><a href="pagine/hardware.html">Manca il tuo hardware o videogioco preferito?</a></li>
+            </ul>
+        </div>
+      
+    <script src="script.js"></script>
+    </body>
+</html>
