@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hardware - CanIRunIt?</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <h1>Perchè mancano i tuoi componenti?</h1>
+        <p class = "testi">
+            Il sito è realizzato puramente a scopo didattico; l'aggiunta di più componenti rende il codice più lungo ma non più complesso. <br>
+            Le <span id = "cpu1">CPU</span>  e <span id = "gpu1">GPU</span> aggiunte sono state scelte in modo casuale fra quelle più utilizzate nelle custom build, da un'entry level a una top level. <br>
+            I videogiochi, come le componenti, sono stati selezionati in modo da partire da uno che abbia requisiti minimi fino ad arrivare ad uno che abbia requisiti alti.
+        </p>
+
+        <img id = "cpu2" src ="https://freepngimg.com/thumb/cpu_processor/84332-cpu-processor.png" onmouseover="cpuMod()" onmouseout="cpuReset()">
+        <img id = "gpu2" src="gpu.png" onmouseover="gpuMod()" onmouseout="gpuReset()">
+
+        <p style="text-align: center; color:gray">
+            (Passa con il cursore sopra le componenti per capire cosa sono)
+        </p>
+
+        <script>
+            function cpuMod(){
+                document.getElementById('cpu1').style.color = 'red';
+            }
+
+            function gpuMod(){
+                document.getElementById('gpu1').style.color = 'red';
+            }
+
+            function cpuReset(){
+                document.getElementById('cpu1').style.color = 'black';
+            }
+
+            function gpuReset(){
+                document.getElementById('gpu1').style.color = 'black';
+            }
+        </script>
+    </body>
+</html>
+

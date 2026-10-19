@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Affidabilità - CanIRunIt?</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body> 
+        <h1>Quanto sono davvero affidabili i risultati?</h1>
+
+        <div class="colonna_sinistra">
+            <p class = "testi">
+            Il sito web calcola la potenza computazionale del tuo computer in <strong>maniera molto approssimata</strong>: <br>
+            In poche parole, la CPU e la GPU selezionate hanno un valore che va da 1 (poco potente dal punto di vista computazionale) a 4 (molto potente). <br>
+            Ogni gioco scelto ha un requisito minimo di CPU e GPU, se i valori selezionati di processore e scheda video sono maggiori o uguali ai requisiti minimi allora il videogioco si può giocare. <br>
+            Non vengono considerati innumerevoli altri requisiti, come memoria, ram, sistema operativo, ... che renderebbero l'output più preciso ma con un codice inutilmente più lungo e ripetitivo. <br>
+            Visto che il sito è a scopo didattico, mi sono permesso di omettere questa precisione.
+            </p>
+        </div>
+
+        <div class = "colonna_destra">
+            <figure>
+                <img id="prerequisiti_cyberpunk" src = "prerequisiti_cyberpunk.png"></img>
+                <figcaption>
+                    Esempio requisiti cyberpunk
+                </figcaption>
+                <img id = "sflogo" src = "https://upload.wikimedia.org/wikipedia/commons/7/71/Street_Fighter_old_logo.png" onclick="cambiaBackgroundSF()"> 
+                <figcaption>
+                    CLICK ME!
+                </figcaption>
+            </figure>
+        </div>
+
+        <script>
+            let attivazioneSF = false;
+
+            function cambiaBackgroundSF(){
+                if(!attivazioneSF){
+                document.body.style.backgroundImage = 'url(sfmap.jpg)'; 
+                document.body.style.backgroundRepeat = 'no-repeat'; 
+                document.body.style.backgroundSize = 'cover';
+                document.body.style.color = 'white';
+                attivazioneSF = true
+                } else{
+                document.body.style.backgroundImage = ''; 
+                document.body.style.backgroundRepeat = ''; 
+                document.body.style.backgroundSize = '';
+                document.body.style.color = ''; 
+                attivazioneSF = false;
+                }     
+            }
+        </script>
+    </body>
+</html>

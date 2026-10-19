@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fonti - CanIRunIt?</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <h1>Sono stati consultati i seguenti siti:</h1>
+        <div class = "colonna_sinistra">
+            <ul class = "testi">
+                <li><a href="https://bartolialberto.github.io/ComputerNetworks/">BartoliAlberto</a></li>
+                <li><a href="https://www.w3schools.com/html/default.asp">W3schools - html</a></li>
+                <li><a href="https://www.w3schools.com/css/default.asp">W3schools - css</a></li>
+                <li><a href="https://www.w3schools.com/js/default.asp">W3schools - javascript</a></li>
+                <li><a href="https://fontmeme.com/doom-font/">Font stile Doom del logo</a></li>
+                <li><a href="https://htmlcolorcodes.com/">Da colore a esadecimale</a></li>
+            </ul>
+            <img id = "pip_boy" src = "https://freepngimg.com/thumb/fallout/140262-pip-boy-fallout-download-hd.png"></img>
+        </div>
+        <div class = "colonna_destra">
+            <figure>
+                <img id = "pipBoyWatch" src = "pipBoyWatch.png" onclick="cambiaBackgroundFallout()">
+                <figcaption id = "clickme">
+                    CLICK ME!
+                </figcaption>
+            </figure>
+        </div>
+        
+
+        <script>
+            let attivazioneFallOut = false;
+
+            function cambiaBackgroundFallout(){
+                if(!attivazioneFallOut){
+                document.body.style.backgroundColor='#0E1911';
+                document.body.style.color = '#67D87D';
+                attivazioneFallOut = true;
+                } else{
+                document.body.style.backgroundColor='';
+                document.body.style.color = '';
+                attivazioneFallOut = false;
+                }
+            }
+        </script>
+    </body>
+</html>
+
+
